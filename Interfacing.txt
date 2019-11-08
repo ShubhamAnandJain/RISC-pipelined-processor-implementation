@@ -1,0 +1,130 @@
+Read about the datapath from
+https://www.cs.colostate.edu/~cs470/s17/Chapter_04Proc_B.pdf
+
+
+MAJOR CHANGES TO BE MADE
+
+1) In the main file, each stage only gives input to the directly next stage in the basic implementation apart from hazard detection and branch forwarding logic. Hence, in the documentation below, if a pipeline stage is taking an input from 2-3 stages previous pipeline stage, then it must be "propagated" through the other stages. To understand this, look at the EXECUTION TASKS notes below.
+
+2) Hazard detection and branch forwarding logic is yet to be implemented.
+
+3) There are some bugs/ things that have not been implemented because the needs of the various stages have not been taken into account yet. For example, in register read, the values of ra and rb are not being extracted (assuming they will be extracted in execution if needed), but execution assumes that values are being passed. In this specific case, it is better to do it in register read since it will be much easier for debugging, and clarity of code.
+
+4) Write back is yet to be implemented.
+
+INSTRUCTION FETCH
+
+Inputs - 
+1) input_pc(16) : The PC that we have to read our current instruction from
+2) clk(1) : Needed for reading from memory
+
+Outputs - 
+1) out_pc(16) : The next program counter from instruction fetch. 
+2) out_instruction(16) : The instruction register obtained
+
+Work to be done: 
+1) Need to decide how to update Register 7 wrt input_pc/output_pc (I think we can just rewrite R7 itself, since this should be the only stage where we are changing it - no need of any input/output at all)
+2) Need to think about branch forwarding logic - that will also have to be taken as input, and accordingly the instruction must be read from pc
+
+INSTRUCTION DECODE
+
+Inputs -
+1) input_ir(16) : The instruction register - FROM IF STAGE
+2) pc(16)
+
+Outputs - 
+1) pc(16)
+2) ir(16)
+3) PC+Imm(16)
+4) JAL detection bit
+
+Work to be done:
+1) Need to think about how to implement branch forwarding logic.
+2) Need to check in this stage if there are dependencies in logic. That should come out as an output.
+
+REGISTER READ
+
+Inputs - 
+1) opcode_input(4) : the opcode - FROM ID STAGE
+
+Outputs -
+1) ra_add_En(1) : bit that signifies that you should be reading from register A in execution stage
+2) rb_add_En(1) : bit that signifies that you should be reading from register B in execution stage
+3) RF_rd_En(1) : bit that signifies that you should be reading from the register file; used to differentiate from immediate
+
+Work to be done: This stage is completed
+
+
+EXECUTION TASKS
+
+Inputs - 
+1) opcode_input(4) : the opcode - FROM ID STAGE
+2) ra_add(3) : Address of register ra - FROM RR STAGE
+3) rb_add(3) : Address of register rb - FROM RR STAGE
+4) immediate_i(6) : the 6-bit immediate logic - FROM ID STAGE
+5) immediate_j(9) : THE 9-bit immediate logic - FROM ID STAGE
+6) cz(2) : the last two bits to decide exact operation - FROM ID STAGE
+7) c_in(1) : Carry flag from the last stage (Prev EXECUTION STAGE)
+8) z_in(1) : Zero flag from the last stage (Prev EXECUTION STAGE)
+9) ra(16) : Value of register a - TAKEN FROM RR STAGE
+10) rb(16) : Value of register b - TAKEN FROM RR STAGE
+11) ip_input(16) : Value of the program counter currently - TAKEN FROM IF STAGE
+
+Outputs - 
+1) opcode_output(4) : not implemented yet
+2) ra_add_out(3) : Passing along value of ra_add_in
+3) rb_add_out(3) : Passing along value of rb_add_in
+4) ip_output(16) : Passing along value of ip_input
+5) alu_output(16) : Output of alu operation
+6) ra_data_out(16) : Passing along value of ra (not needed)
+7) rb_data_out(16) : Passing along value of rb (not needed)
+8) c_out(1) : The output carry flag
+9) z_out(1) : The output zero flag
+10) indicator_bit_r3(1) : Indicates whether rc should be changed as a result of ALU operations
+11) indicator_bit_beq(1) : Indicates whether we need to branch on beq. Currently, this returns 1 if (ra == rb); meaning that we are taking default NOT TAKEN logic
+
+Work to be done - 
+1) Branch forwarding logic; check what flags are set, and accordingly do BEQ, etc
+
+MEMORY ACCESS STAGE
+
+List of Input:
+1)  Current_ip_input(16) : instruction pointer of lastest instruction in pipeline (ie, in IF stage) - FROM IF STAGE to THIS STAGE DIRECT
+2)  original_ip_input(16) : instruction pointer of instruction currently in memory access stage - FROM EX STAGE
+3)  Opcode_input(4) :  opcode - FROM EX STAGE
+4)  Branch_bit(1) : 1 if branch in BEQ - FROM EX STAGE
+5)  ra_data(16) : data in reg ra (maybe garbage if instruction has no need for reg a) - FROM EX STAGE 
+7)  r0_datain(16) : data in reg0 - FROM EX STAGE
+8)  r1_datain(16) : data in reg1 - FROM EX STAGE
+9)  r2_datain(16) : data in reg2 - FROM EX STAGE
+10) r3_datain(16) : data in reg3 - FROM EX STAGE
+11) r4_datain(16) : data in reg4 - FROM EX STAGE
+12) r5_datain(16) : data in reg5 - FROM EX STAGE
+13) r6_datain(16) : data in reg6 - FROM EX STAGE
+14) r7_datain(16) : data in reg7 - FROM EX STAGE
+15) ALU_data (16) : output of ALU calculations in JAL, BEQ - FROM EX STAGE
+16) rb_data (16)  : data in reg b - FROM EX
+17) CLK(1) : clock signal
+
+List of Output:
+
+1)  r0_load(16) : data to be written in reg0 - TO WB STAGE 
+2)  r1_load(16) : data to be written in reg1 - TO WB STAGE
+3)  r2_load(16) : data to be written in reg2 - TO WB STAGE
+4)  r3_load(16) : data to be written in reg3 - TO WB STAGE
+5)  r4_load(16) : data to be written in reg4 - TO WB STAGE
+6)  r5_load(16) : data to be written in reg5 - TO WB STAGE
+7)  r6_load(16) : data to be written in reg6 - TO WB STAGE
+8)  r7_load(16) : data to be written in reg7 - TO WB STAGE
+9)  ip_output   : to be written in ip - TO IP DIRECTLY
+10) ra_write(16) : data to be written in rega - TO WB STAGE
+
+
+REGISTER WRITE
+
+Inputs -
+1)
+
+
+Outputs - 
+1)

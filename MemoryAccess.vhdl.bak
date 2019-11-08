@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+
+entity MemoryAccess is
+port( 
+	address 	: in std_logic_vector(15 downto 0);	-- lsreg_a in docs
+	pc 		: in std_logic_vector(15 downto 0);
+	pc_inc		: in std_logic_vector(15 downto 0);
+	
+	data_in		: in std_logic_vector(15 downto 0);
+	
+	ir		: in std_logic_vector(15 downto 0);
+	
+	control_word	: in std_logic_vector(15 downto 0);
+	prop,enable	: in std_logic;
+
+	
+	pc_out 		: out std_logic_vector(15 downto 0);
+	pc_inc_out	: out std_logic_vector(15 downto 0);
+	ir_out		: out std_logic_vector(15 downto 0);
+	data_out	: out std_logic_vector(15 downto 0);
+	control_word_out: out std_logic_vector(15 downto 0)	
+);
+
+end entity MemoryAccess;
+
+architecture stage_mem of MemoryAccess is
+
+component InstructionMemory is 
+	port (address,Mem_datain: in std_logic_vector(15 downto 0); 
+	         clk,Mem_wrbar: in std_logic;
+		   Mem_dataout: out std_logic_vector(15 downto 0));
+end component;
+
+begin
+
+Mem_data: DataMemory
+	port map(address => address, Mem_datain => data_in, Mem_dataout => data_out, clk => clk, Mem_wrbar => control_word(10)); 
+	
+----------Propagating
+
+pc_out <= pc;
+pc_inc_out <= pc_inc;
+control_word_out <= control_word;
+ir_out <= ir;
+
+end stage_mem;

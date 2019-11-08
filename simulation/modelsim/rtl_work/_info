@@ -1,0 +1,1063 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/simulation/modelsim
+Ealu
+Z1 w1572894960
+Z2 DPx4 work 5 gates 0 22 :nX2HcfBNgJnzeI[gH_>X0
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl
+Z6 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl
+l0
+L6
+VkdbfdIlaAQYC^fFgXGlJ20
+!s100 BZM3>QHfikRgH3W[7V^<D0
+Z7 OV;C;10.4d;61
+31
+Z8 !s110 1573145309
+!i10b 1
+Z9 !s108 1573145309.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl|
+Z11 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Afinalwork
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 kdbfdIlaAQYC^fFgXGlJ20
+l38
+L18
+V0G]YGZDJZ7K`HUgHicJjn3
+!s100 ]_LKeR7lCSYojL2ZNIk_F1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eand_2
+R1
+R3
+R4
+R0
+Z14 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl
+Z15 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl
+l0
+L62
+VWm0?CoDI7J[0^f]c2R1l62
+!s100 6nAdW8j4d04HV@1jQJ_2?3
+R7
+31
+Z16 !s110 1573145308
+!i10b 1
+Z17 !s108 1573145308.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl|
+Z19 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl|
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 5 and_2 0 22 Wm0?CoDI7J[0^f]c2R1l62
+l67
+L66
+VKbmYeY[@=KigPeGPkoF:13
+!s100 _:8=JEZjzB];7S>o=f5za2
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Ebit_adder_1
+R1
+R3
+R4
+R0
+Z20 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl
+Z21 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl
+l0
+L7
+VCjPQCUGo8>Y3@Q^hVo^>@0
+!s100 >]1IRT;E>Sn<Of1gUR]<_1
+R7
+31
+Z22 !s110 1573145307
+!i10b 1
+Z23 !s108 1573145307.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl|
+Z25 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl|
+!i113 1
+R12
+R13
+Aaddition
+R3
+R4
+DEx4 work 11 bit_adder_1 0 22 CjPQCUGo8>Y3@Q^hVo^>@0
+l24
+L14
+VW>=QaM:RMKSO82W3zHH<?0
+!s100 m4bB28UK8UcbF4T@hU6dm1
+R7
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R12
+R13
+Ebit_adder_8
+Z26 w1572969778
+R3
+R4
+R0
+Z27 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl
+Z28 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl
+l0
+L7
+V1W4@<zjFa8B@7WUh;UoTm2
+!s100 9CaE4@Uio@TAQbZ]emzGS3
+R7
+31
+R16
+!i10b 1
+R17
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl|
+Z30 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl|
+!i113 1
+R12
+R13
+Aaddition
+R3
+R4
+DEx4 work 11 bit_adder_8 0 22 1W4@<zjFa8B@7WUh;UoTm2
+l23
+L13
+VVgSlKS2>72F4Q?<W_63;k2
+!s100 Dh]Um18MhmFOOmo2Xa@lP2
+R7
+31
+R16
+!i10b 1
+R17
+R29
+R30
+!i113 1
+R12
+R13
+Ebitwisenand
+R1
+R3
+R4
+R0
+Z31 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl
+Z32 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl
+l0
+L4
+V598V]o198IHk70^EZb]oR0
+!s100 T^X?F6WAMR700[m]5>GP70
+R7
+31
+R16
+!i10b 1
+R17
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl|
+Z34 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl|
+!i113 1
+R12
+R13
+Afn1
+R3
+R4
+DEx4 work 11 bitwisenand 0 22 598V]o198IHk70^EZb]oR0
+l13
+L11
+VP:SUn@ZbGkY5NS72N0HiQ0
+!s100 hA;1g[32j1Y<?DYC<H@jH0
+R7
+31
+R16
+!i10b 1
+R17
+R33
+R34
+!i113 1
+R12
+R13
+Eeighttothreeenc
+R1
+R3
+R4
+R0
+Z35 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl
+Z36 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl
+l0
+L4
+V[?FXL`oO6YaQciGLn5;WY3
+!s100 ZDR[FiHD2L]hZLhdUCJA[3
+R7
+31
+R22
+!i10b 1
+R23
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl|
+Z38 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl|
+!i113 1
+R12
+R13
+Astr
+R3
+R4
+DEx4 work 15 eighttothreeenc 0 22 [?FXL`oO6YaQciGLn5;WY3
+l13
+L11
+V:7j;]oB>69;KLk16;<L6C3
+!s100 7o6JIN0IK:F7nM4_^b<<P3
+R7
+31
+R22
+!i10b 1
+R23
+R37
+R38
+!i113 1
+R12
+R13
+Eexecutiontasks
+Z39 w1573142480
+R3
+R4
+R0
+Z40 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl
+Z41 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl
+l0
+L5
+VC^4;TDe:A?fA5Uaohl^iN2
+!s100 Jk[XB9nUG]2_gmmgKieQO1
+R7
+31
+R22
+!i10b 1
+R23
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl|
+Z43 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl|
+!i113 1
+R12
+R13
+Aot
+R3
+R4
+DEx4 work 14 executiontasks 0 22 C^4;TDe:A?fA5Uaohl^iN2
+l69
+L46
+VPa5Ra0ojPGXZAeH=h]1i61
+!s100 GIJ3`iZ>Uoe3`eOYP];GS3
+R7
+31
+R22
+!i10b 1
+R23
+R42
+R43
+!i113 1
+R12
+R13
+Efull_adder
+R1
+R2
+R3
+R4
+R0
+Z44 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl
+Z45 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl
+l0
+L7
+V@mmBVg02FRWhOJiZG;VS12
+!s100 H=:zT=46zo28lmNL^=N@g0
+R7
+31
+R8
+!i10b 1
+R9
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl|
+Z47 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 10 full_adder 0 22 @mmBVg02FRWhOJiZG;VS12
+l12
+L10
+VzRM2f9mzCNfSV`nlHICa43
+!s100 ca2NFDMYiN:ffm[G]lD]e0
+R7
+31
+R8
+!i10b 1
+R9
+R46
+R47
+!i113 1
+R12
+R13
+Pgates
+R3
+R4
+R1
+R0
+R14
+R15
+l0
+L3
+V:nX2HcfBNgJnzeI[gH_>X0
+!s100 [[g>Ybb>ozP]>d>k`Li^Q2
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Ehalf_adder
+R1
+R3
+R4
+R0
+R14
+R15
+l0
+L129
+Vc1b>UE@g14H=9=l]onM2B3
+!s100 X2TS[gBgnS;eQbFaGH7On0
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 10 half_adder 0 22 c1b>UE@g14H=9=l]onM2B3
+l134
+L133
+VY3nSnF=G5na6OCU<>Zh<a2
+!s100 KX7g3N?:ZhP;PU]1Ie0k02
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Ehazarddetectionunit
+Z48 w1573144688
+R3
+R4
+R0
+Z49 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd
+Z50 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd
+l0
+L5
+VEDHES=HV<VYCY>oCJL2B21
+!s100 N2WmbSQka94fUS^g>GdH72
+R7
+31
+R22
+!i10b 1
+R23
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd|
+Z52 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd|
+!i113 1
+R12
+R13
+Aspaghetticode
+R3
+R4
+DEx4 work 19 hazarddetectionunit 0 22 EDHES=HV<VYCY>oCJL2B21
+l27
+L16
+VnFo9RLY;BaXIJ8[>Lgh:g0
+!s100 JiH1VB<QR_W_E[7D53gzW3
+R7
+31
+R22
+!i10b 1
+R23
+R51
+R52
+!i113 1
+R12
+R13
+Einstructiondecode
+Z53 w1573132286
+Z54 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R0
+Z55 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl
+Z56 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl
+l0
+L5
+VA2ffXKDVG7BR=MJcMN<jZ1
+!s100 GEXYzJfFYZUAHLJ2GN=Se2
+R7
+31
+R22
+!i10b 1
+R23
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl|
+Z58 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl|
+!i113 1
+R12
+R13
+Adecode
+R54
+R3
+R4
+DEx4 work 17 instructiondecode 0 22 A2ffXKDVG7BR=MJcMN<jZ1
+l60
+L30
+VJRYHZfIaRA0V2PS_^fCD[1
+!s100 RU8nMQnE7]No5A5IU;KG83
+R7
+31
+R22
+!i10b 1
+R23
+R57
+R58
+!i113 1
+R12
+R13
+Einstructionfetch
+R1
+R2
+R3
+R4
+R0
+Z59 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl
+Z60 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl
+l0
+L6
+V=JM4LUE<ZM95^2@`8?S@Z0
+!s100 JITh23H_2zTZQ6d93QhD50
+R7
+31
+R8
+!i10b 1
+R9
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl|
+Z62 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl|
+!i113 1
+R12
+R13
+Air
+R2
+R3
+R4
+DEx4 work 16 instructionfetch 0 22 =JM4LUE<ZM95^2@`8?S@Z0
+l28
+L12
+V8l;`3fN<nzlb6TOlWA^Vk1
+!s100 3Aaf:^]`9n47KHZ]MQi3<3
+R7
+31
+R8
+!i10b 1
+R9
+R61
+R62
+!i113 1
+R12
+R13
+Einverter
+R1
+R3
+R4
+R0
+R14
+R15
+l0
+L50
+VRMUNkoCD3A67;4=@WD3Yg1
+!s100 BT8GdiDdU_:z8>nUPYZ<]0
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 8 inverter 0 22 RMUNkoCD3A67;4=@WD3Yg1
+l55
+L54
+V>c:e=FmSVkl0>8HdbNg020
+!s100 =:R`;[Rh=]bFdUC3hG:ha1
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Einverter_vector
+R1
+R3
+R4
+R0
+R14
+R15
+l0
+L143
+V[NzD>_OX]FacZ=<:DUffP0
+!s100 8AfJg86Xb`Be_97YDYAWQ2
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 15 inverter_vector 0 22 [NzD>_OX]FacZ=<:DUffP0
+l148
+L147
+Vf1;dKX5IlP2T12lOGQa9C0
+!s100 E]TnRFiWSfk=hkB8PXzkX1
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Ememory_asyncread_syncwrite
+Z63 w1573145240
+Z64 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z65 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R54
+R3
+R4
+R0
+Z66 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd
+Z67 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd
+l0
+L13
+V2>9;VAXfLIN2@lBbnCB?62
+!s100 FWBC`jhVO0A^l:MJU_JNM0
+R7
+31
+R22
+!i10b 1
+R23
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd|
+Z69 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd|
+!i113 1
+R12
+R13
+Aform
+R64
+R65
+R54
+R3
+R4
+DEx4 work 26 memory_asyncread_syncwrite 0 22 2>9;VAXfLIN2@lBbnCB?62
+l53
+L18
+V[:QVjO3=QXLEIK?d4:7Ug2
+!s100 20BRE79cZX5>SdQ?Eh:Vd2
+R7
+31
+R22
+!i10b 1
+R23
+R68
+R69
+!i113 1
+R12
+R13
+Ememoryaccess
+Z70 w1573132398
+R3
+R4
+R0
+Z71 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl
+Z72 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl
+l0
+L5
+V:241G8DnC1VCdlS8bzEmd3
+!s100 GzNNzY=[X50gFoD2;A;Zk0
+R7
+31
+R22
+!i10b 1
+R23
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl|
+Z74 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl|
+!i113 1
+R12
+R13
+Astage_mem
+R3
+R4
+DEx4 work 12 memoryaccess 0 22 :241G8DnC1VCdlS8bzEmd3
+l39
+L29
+VWA?@3HdP?_aGNL4og2jnG2
+!s100 5GZ<?24c]3lNk4<:`W[gl2
+R7
+31
+R22
+!i10b 1
+R23
+R73
+R74
+!i113 1
+R12
+R13
+Enand_2
+R1
+R3
+R4
+R0
+R14
+R15
+l0
+L73
+Vj>W[C``g=YMD0j7mcT^_F1
+!s100 f=`4b?ce;R9BdWLWAO?B30
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 6 nand_2 0 22 j>W[C``g=YMD0j7mcT^_F1
+l78
+L77
+VWi]X>NJzUH=IbD2BNM[RB1
+!s100 eW28VZW^>zSb6R4TPkzOd2
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Enor_2
+R1
+R3
+R4
+R0
+R14
+R15
+l0
+L95
+VCPXi3:cCJ>4jff1zLoPBz0
+!s100 XQR>in?T40LY_4dHQa=TX1
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 5 nor_2 0 22 CPXi3:cCJ>4jff1zLoPBz0
+l100
+L99
+V8QHn4P3z@E6Nbi:mYa5>S3
+!s100 :4BTQIPLRlfH>;9^b7?JF1
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Eor_2
+R1
+R3
+R4
+R0
+R14
+R15
+l0
+L84
+VK]Bn6b7Kk_N0PV<0W<L_A1
+!s100 iNnVk]]@:00IRF1F5MK5j0
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 4 or_2 0 22 K]Bn6b7Kk_N0PV<0W<L_A1
+l89
+L88
+VNk_98_4SMn0kHRRlT:cPS3
+!s100 W5`gB5z=Q^L4l4i>=3Yjn1
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Eregisterread
+Z75 w1573142021
+R2
+R3
+R4
+R0
+Z76 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl
+Z77 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl
+l0
+L6
+V^AXR36[kIT1=G3DfO5nFS1
+!s100 8ZmkR0G94TQ65jh`>=Dcg3
+R7
+31
+R8
+!i10b 1
+R9
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl|
+Z79 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl|
+!i113 1
+R12
+R13
+Arr
+R2
+R3
+R4
+DEx4 work 12 registerread 0 22 ^AXR36[kIT1=G3DfO5nFS1
+l44
+L20
+V>aMAO1JzYR_14Sj86E7k82
+!s100 iQRfg=GlfKmgIg<1D<>H=0
+R7
+31
+R8
+!i10b 1
+R9
+R78
+R79
+!i113 1
+R12
+R13
+Erf
+Z80 w1572961862
+R3
+R4
+R0
+Z81 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl
+Z82 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl
+l0
+L4
+VHo8B:]7VMC1dHO6@ao=1D1
+!s100 V;ISaJ2m4`THd6N7@lkcI0
+R7
+31
+R16
+!i10b 1
+R17
+Z83 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl|
+Z84 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl|
+!i113 1
+R12
+R13
+Awrk
+R3
+R4
+DEx4 work 2 rf 0 22 Ho8B:]7VMC1dHO6@ao=1D1
+l30
+L21
+Vna?QCR6;J?^6aRnY<8X`:0
+!s100 `Uf8_zY2MFljDZ3RFDNlB1
+R7
+31
+R16
+!i10b 1
+R17
+R83
+R84
+!i113 1
+R12
+R13
+Ethreetoeight_decoder
+R1
+R3
+R4
+R0
+Z85 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl
+Z86 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl
+l0
+L4
+VNcS7d9?5PdzI5giD6BBC22
+!s100 jZAjBOhc9`m>Ge=:XfQ:X1
+R7
+31
+R16
+!i10b 1
+R17
+Z87 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl|
+Z88 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl|
+!i113 1
+R12
+R13
+Adecode
+R3
+R4
+DEx4 work 20 threetoeight_decoder 0 22 NcS7d9?5PdzI5giD6BBC22
+l13
+L11
+VXN8zL7@8G=?<YYhCPAE>?0
+!s100 V;JY[JK6Al^34aM?a20VG2
+R7
+31
+R16
+!i10b 1
+R17
+R87
+R88
+!i113 1
+R12
+R13
+Etoplevel
+Z89 w1573140296
+R3
+R4
+R0
+Z90 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl
+Z91 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl
+l0
+L4
+VfQ`j<j2AVmM]GLE44oiKA3
+!s100 5j7kT8B73?iI[1W8mz:d63
+R7
+31
+R22
+!i10b 1
+Z92 !s108 1573145306.000000
+Z93 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl|
+Z94 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl|
+!i113 1
+R12
+R13
+Aproject1
+R3
+R4
+DEx4 work 8 toplevel 0 22 fQ`j<j2AVmM]GLE44oiKA3
+l211
+L8
+Vj<H7IZ9znV86?G`o0Ed`d0
+!s100 lWlBGmVKUTTgcPGSB0F7>1
+R7
+31
+R22
+!i10b 1
+R92
+R93
+R94
+!i113 1
+R12
+R13
+Ewriteback
+Z95 w1573101883
+R2
+R3
+R4
+R0
+Z96 8C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl
+Z97 FC:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl
+l0
+L6
+VTB_Mnn20_kimb8XA_S7FC1
+!s100 Z^1dN?7]Dj9m5DDD:[c1B2
+R7
+31
+R8
+!i10b 1
+R17
+Z98 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl|
+Z99 !s107 C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl|
+!i113 1
+R12
+R13
+Awb
+R2
+R3
+R4
+DEx4 work 9 writeback 0 22 TB_Mnn20_kimb8XA_S7FC1
+l20
+L16
+V]0^KigT8WB5eS;_zJ]RBB2
+!s100 g3;<:[Tch@G6id1C3:T>93
+R7
+31
+R8
+!i10b 1
+R17
+R98
+R99
+!i113 1
+R12
+R13
+Exnor_2
+R1
+R3
+R4
+R0
+R14
+R15
+l0
+L118
+Vk`?;R1oIUFBDCC]kPFh1^2
+!s100 [:EO4`l_nM`;TEeEVi9Cc1
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 6 xnor_2 0 22 k`?;R1oIUFBDCC]kPFh1^2
+l123
+L122
+V=l5hoEnLgEW>oF6NNZ0M31
+!s100 34K_QkUKMhn]eh;dh9cBh2
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Exor_2
+R1
+R3
+R4
+R0
+R14
+R15
+l0
+L107
+V8MAad]b]1DBIH<^cWKJ590
+!s100 9AWZi9h5iBGe0D_NF[g2m2
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 5 xor_2 0 22 8MAad]b]1DBIH<^cWKJ590
+l112
+L111
+V^?9_<o2oERfGU`kg<S0hI0
+!s100 07ZWKEVTKSUINkMk6oSWh3
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13

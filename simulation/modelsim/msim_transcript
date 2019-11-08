@@ -1,0 +1,540 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Pipeline_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:01 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TopLevel
+# -- Compiling architecture Project1 of TopLevel
+# End time: 22:18:01 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:01 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Bit_adder_1
+# -- Compiling architecture Addition of Bit_adder_1
+# End time: 22:18:01 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:01 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemoryAccess
+# -- Compiling architecture stage_mem of MemoryAccess
+# End time: 22:18:01 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:01 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Memory_asyncread_syncwrite
+# -- Compiling architecture Form of Memory_asyncread_syncwrite
+# End time: 22:18:01 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:01 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity InstructionDecode
+# -- Compiling architecture decode of InstructionDecode
+# End time: 22:18:02 on Nov 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:02 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity HazardDetectionUnit
+# -- Compiling architecture SpaghettiCode of HazardDetectionUnit
+# End time: 22:18:02 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:02 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ExecutionTasks
+# -- Compiling architecture OT of ExecutionTasks
+# End time: 22:18:02 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:02 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity eightToThreeEnc
+# -- Compiling architecture str of eightToThreeEnc
+# End time: 22:18:02 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:02 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Bit_adder_8
+# -- Compiling architecture Addition of Bit_adder_8
+# End time: 22:18:02 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:02 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity threeToeight_Decoder
+# -- Compiling architecture decode of threeToeight_Decoder
+# End time: 22:18:02 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:03 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BitwiseNand
+# -- Compiling architecture fn1 of BitwiseNand
+# End time: 22:18:03 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:03 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Gates
+# -- Compiling entity INVERTER
+# -- Compiling architecture Equations of INVERTER
+# -- Compiling entity AND_2
+# -- Compiling architecture Equations of AND_2
+# -- Compiling entity NAND_2
+# -- Compiling architecture Equations of NAND_2
+# -- Compiling entity OR_2
+# -- Compiling architecture Equations of OR_2
+# -- Compiling entity NOR_2
+# -- Compiling architecture Equations of NOR_2
+# -- Compiling entity XOR_2
+# -- Compiling architecture Equations of XOR_2
+# -- Compiling entity XNOR_2
+# -- Compiling architecture Equations of XNOR_2
+# -- Compiling entity HALF_ADDER
+# -- Compiling architecture Equations of HALF_ADDER
+# -- Compiling entity INVERTER_VECTOR
+# -- Compiling architecture Equations of INVERTER_VECTOR
+# End time: 22:18:03 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:03 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RF
+# -- Compiling architecture Wrk of RF
+# End time: 22:18:03 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:03 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity WriteBack
+# -- Compiling architecture WB of WriteBack
+# End time: 22:18:03 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:03 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity InstructionFetch
+# -- Compiling architecture IR of InstructionFetch
+# End time: 22:18:03 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:04 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity Full_Adder
+# -- Compiling architecture Struct of Full_Adder
+# End time: 22:18:04 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:04 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity ALU
+# -- Compiling architecture FinalWork of ALU
+# End time: 22:18:04 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:04 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity RegisterRead
+# -- Compiling architecture RR of RegisterRead
+# End time: 22:18:04 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript -do Pipeline_run_msim_rtl_vhdl.do work.toplevel(project1)
+# vsim -gui -l msim_transcript -do "Pipeline_run_msim_rtl_vhdl.do" work.toplevel(project1) 
+# Start time: 22:18:22 on Nov 07,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.toplevel(project1)
+# Loading work.gates
+# Loading work.instructionfetch(ir)
+# Loading work.bit_adder_8(addition)
+# Loading work.half_adder(equations)
+# Loading work.full_adder(struct)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.memory_asyncread_syncwrite(form)
+# Loading work.instructiondecode(decode)
+# Loading work.eighttothreeenc(str)
+# Loading work.threetoeight_decoder(decode)
+# Loading work.bit_adder_1(addition)
+# Loading work.registerread(rr)
+# Loading work.rf(wrk)
+# Loading work.executiontasks(ot)
+# Loading work.alu(finalwork)
+# Loading work.bitwisenand(fn1)
+# Loading work.memoryaccess(stage_mem)
+# Loading work.writeback(wb)
+# Loading work.hazarddetectionunit(spaghetticode)
+# ** Warning: (vsim-8683) Uninitialized out port /toplevel/EX_instance_1/wr_c_bit has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# do Pipeline_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:26 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TopLevel
+# -- Compiling architecture Project1 of TopLevel
+# End time: 22:18:27 on Nov 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:27 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Bit_adder_1
+# -- Compiling architecture Addition of Bit_adder_1
+# End time: 22:18:27 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:27 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemoryAccess
+# -- Compiling architecture stage_mem of MemoryAccess
+# End time: 22:18:27 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:27 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Memory_asyncread_syncwrite
+# -- Compiling architecture Form of Memory_asyncread_syncwrite
+# End time: 22:18:27 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:27 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity InstructionDecode
+# -- Compiling architecture decode of InstructionDecode
+# End time: 22:18:27 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:27 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity HazardDetectionUnit
+# -- Compiling architecture SpaghettiCode of HazardDetectionUnit
+# End time: 22:18:27 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:27 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ExecutionTasks
+# -- Compiling architecture OT of ExecutionTasks
+# End time: 22:18:27 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:27 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity eightToThreeEnc
+# -- Compiling architecture str of eightToThreeEnc
+# End time: 22:18:27 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:28 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Bit_adder_8
+# -- Compiling architecture Addition of Bit_adder_8
+# End time: 22:18:28 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:28 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity threeToeight_Decoder
+# -- Compiling architecture decode of threeToeight_Decoder
+# End time: 22:18:28 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:28 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BitwiseNand
+# -- Compiling architecture fn1 of BitwiseNand
+# End time: 22:18:28 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:28 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Gates
+# -- Compiling entity INVERTER
+# -- Compiling architecture Equations of INVERTER
+# -- Compiling entity AND_2
+# -- Compiling architecture Equations of AND_2
+# -- Compiling entity NAND_2
+# -- Compiling architecture Equations of NAND_2
+# -- Compiling entity OR_2
+# -- Compiling architecture Equations of OR_2
+# -- Compiling entity NOR_2
+# -- Compiling architecture Equations of NOR_2
+# -- Compiling entity XOR_2
+# -- Compiling architecture Equations of XOR_2
+# -- Compiling entity XNOR_2
+# -- Compiling architecture Equations of XNOR_2
+# -- Compiling entity HALF_ADDER
+# -- Compiling architecture Equations of HALF_ADDER
+# -- Compiling entity INVERTER_VECTOR
+# -- Compiling architecture Equations of INVERTER_VECTOR
+# End time: 22:18:28 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:28 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RF
+# -- Compiling architecture Wrk of RF
+# End time: 22:18:28 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:28 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity WriteBack
+# -- Compiling architecture WB of WriteBack
+# End time: 22:18:29 on Nov 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:29 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity InstructionFetch
+# -- Compiling architecture IR of InstructionFetch
+# End time: 22:18:29 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:29 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity Full_Adder
+# -- Compiling architecture Struct of Full_Adder
+# End time: 22:18:29 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:29 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity ALU
+# -- Compiling architecture FinalWork of ALU
+# End time: 22:18:29 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:18:29 on Nov 07,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity RegisterRead
+# -- Compiling architecture RR of RegisterRead
+# End time: 22:18:29 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: unknown  Hostname: sona  ProcessID: 17180
+# 
+#           Attempting to use alternate WLF file "./wlft75tr3n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft75tr3n
+# 
+force -freeze sim:/toplevel/r 1 0
+force -freeze sim:/toplevel/clk 1 0, 0 {50 ps} -r 100
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /toplevel/MEM_instance_1/Mem_data
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /toplevel/MEM_instance_1/Mem_data
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /toplevel/IF_instance_1/Mem1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /toplevel/IF_instance_1/Mem1
+run
+force -freeze sim:/toplevel/r 0 0
+run
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 400 ps  Iteration: 1  Instance: /toplevel/MEM_instance_1/Mem_data
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 400 ps  Iteration: 1  Instance: /toplevel/MEM_instance_1/Mem_data
+run
+run
+run
+run
+run
+run
+# End time: 22:22:09 on Nov 07,2019, Elapsed time: 0:03:47
+# Errors: 0, Warnings: 9

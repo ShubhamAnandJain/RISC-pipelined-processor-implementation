@@ -1,0 +1,106 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+
+entity ExecutionTasks is
+port( 
+	
+	lm_address 	: in std_logic_vector(15 downto 0);	-- lsreg_a in docs
+	pc 		: in std_logic_vector(15 downto 0);
+	pc_inc		: in std_logic_vector(15 downto 0);
+	operand_1	: in std_logic_vector(15 downto 0);	--ra
+	operand_2	: in std_logic_vector(15 downto 0);	--rb
+	ir		: in std_logic_vector(15 downto 0);
+	
+	
+	control_word	: in std_logic_vector(15 downto 0);
+	jump_addr	: in std_logic_vector(15 downto 0);
+
+	
+	prop,enable	: in std_logic;
+	zin,cin		: in std_logic;
+
+--	lhi_sel		: in std_logic;
+	
+	lm_address_out	: out std_logic_vector(15 downto 0);
+	pc_out 		: out std_logic_vector(15 downto 0);
+	pc_inc_out	: out std_logic_vector(15 downto 0);
+	alu_out		: out std_logic_vector(15 downto 0);
+	ir_out		: out std_logic_vector(15 downto 0);
+	jump_addr_out	: out std_logic_vector(15 downto 0);
+	cout 		: out std_logic;
+	zout		: out std_logic;
+	wr_c_bit		: out std_logic;
+	
+	beq_condn_bit	: out std_logic;
+	
+	control_word_out: out std_logic_vector(15 downto 0)
+	
+	);
+
+end entity ExecutionTasks;
+
+architecture OT of ExecutionTasks is
+
+component ALU is
+   port(input_vectorf1 : in std_logic_vector(15 downto 0);
+	input_vectorf2 : in std_logic_vector(15 downto 0);
+	Op_select : in std_logic; --0-Add 1-Nand
+	output_vectorf : out std_logic_vector(15 downto 0);
+	Carry_flag : out std_logic;
+	Zero_flag : out std_logic);
+
+end component;
+
+signal alu_c : std_logic;
+signal alu_z : std_logic;
+signal alu_output : std_logic_vector(15 downto 0);
+signal imm : std_logic_vector(15 downto 0);
+signal lhi : std_logic_vector(15 downto 0);
+signal operand_sel_1 : std_logic;
+signal operand_sel_2 : std_logic;
+signal op1 : std_logic_vector(15 downto 0);
+signal op2 : std_logic_vector(15 downto 0);
+
+begin
+
+	
+----------Propagating
+
+pc_out <= pc;
+pc_inc_out <= pc_inc;
+control_word_out <= control_word;
+lm_address_out <= lm_address;	
+ir_out <= ir;
+jump_addr_out <= jump_addr;
+
+--Setting the values of the operands and op_sel
+
+operand_sel_1 <= '1' when ir(15 downto 13)="010" else '0' ;
+operand_sel_2 <= '1' when ir(15 downto 13)="011" else '0' ;
+			
+
+imm <= "1111111111"&ir(5 downto 0) when ir(5) = '1' else "0000000000"&ir(5 downto 0);
+
+op2 <= operand_2 when operand_sel_2='0' else x"0001";
+	
+op1 <= operand_1 when operand_sel_1='0' else imm;
+
+
+--Doing ALU,LHI operation and output
+
+lhi <= ir(8 downto 0)&"0000000";	
+		 
+Alu1: ALU
+	  port map(input_vectorf1 => op1, input_vectorf2 => op2, Op_select => control_word(0), output_vectorf => alu_output, Carry_flag => alu_c, Zero_flag => alu_z);
+
+alu_out <= alu_output when control_word(2)='0' else lhi;
+	
+--Here we are modifying the C and Z flags 
+cout <= alu_c when control_word(12)='1' and prop='1' and enable='1' else cin;
+zout <= alu_z when control_word(11)='1' and prop='1' and enable='1' else zin;
+
+-- BEQ condn evaluate
+beq_condn_bit <= '1' when (operand_1 = operand_2) and control_word(5)='1' and prop='1' and enable='1' else '0';
+wr_c_bit <= '1' when ((control_word(4)='0' or cout='1') and (control_word(3)='0' or zout='1')) and control_word(7) else '0';
+end OT;

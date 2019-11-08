@@ -1,0 +1,26 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl}
+vcom -93 -work work {C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl}
+

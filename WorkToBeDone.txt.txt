@@ -1,0 +1,4 @@
+ID_RR - JAR to be re-written in the indicated register
+MEM_WR - find a way to give register to WR
+r7_bit - give a bit from r7 from the stages MEM and EX
+

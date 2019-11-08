@@ -1,0 +1,145 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity TopLevel is
+   port (r, clk: in std_logic);
+end entity;
+
+architecture Project1 of TopLevel is
+  signal enable_if, enable_id, enable_rr, enable_ex, enable_mem, enable_wb : std_logic;
+  signal pc_mux_control, lm_instruction : std_logic;
+  signal rr_mux_control : std_logic_vector(15 downto 0);
+  signal out_addrpc : std_logic_vector(15 downto 0);
+  
+component InstructionFetch is
+	port( 
+		input_pc : in std_logic_vector(15 downto 0); 
+		clk: in std_logic;
+		out_pc, out_instruction : out std_logic_vector(15 downto 0)
+			);
+end component;
+
+component InstructionDecode is
+	port( 
+		input_pc : in std_logic_vector(15 downto 0);
+		input_ir : in std_logic_vector(15 downto 0);
+		prop_bit : in std_logic;
+		to_jump : out std_logic;
+		jump_addr : out std_logic_vector(15 downto 0);
+		output_pc, out_ir : out std_logic_vector(15 downto 0)
+		);
+end component;  
+
+-- Note that to_jump in InstructionDecode will be used by the TopLevel logic
+
+component RegRead is
+	port(
+		input_pc, input_ir, jump_addr : in std_logic_vector(15 downto 0);
+		prop_bit : in std_logic;
+		ra_mux, rb_mux : in std_logic_vector(1 downto 0);
+		output_pc, ra, rb : out std_logic_vector(15 downto 0);
+		output_jump, out_ir : out std_logic_vector(15 downto 0)
+		);	
+end component;
+
+component ExecutionTasks is
+
+	port(
+		input_pc, ra, rb, jump_addr, ir : in std_logic_vector(15 downto 0);
+		prop_bit : in std_logic;
+		output_pc, rc, out_ir : out std_logic_vector(15 downto 0);
+		ex_data, wr_data : in std_logic_vector(15 downto 0);
+		control_ra, control_rb : in std_logic_vector(1 downto 0)
+		);
+end component;		
+		
+-- INTERFACE REGISTERS
+
+signal IF_ID_enable : std_logic;
+signal ID_RR_enable : std_logic;
+signal RR_EX_enable : std_logic;
+signal EX_MEM_enable : std_logic;
+signal MEM_WR_enable : std_logic;
+
+signal IF_ID_interface : std_logic_vector(31 downto 0);
+signal ID_RR_interface : std_logic_vector(31 downto 0);
+signal RR_EX_interface : std_logic_vector(31 downto 0);
+signal EX_MEM_interface : std_logic_vector(31 downto 0);
+signal MEM_WR_interface : std_logic_vector(31 downto 0);
+
+-- INSTRUCTION FETCH : f
+
+signal in_pc_f : std_logic_vector(15 downto 0);
+signal out_pc_f : std_logic_vector(15 downto 0);
+signal out_pc_inc_f : std_logic_vector(15 downto 0);
+signal out_instruction_f : std_logic_vector(15 downto 0);
+ 
+-- INSTRUCTION DECODE : d
+
+signal in_pc_d, in_pc_inc_d, in_instruction_d : std_logic_vector(15 downto 0);
+signal prop_d, enable_d, sm_lm_mux_control_d : std_logic;
+signal out_pc_d, out_pc_inc_d, out_instruction_d, out_control_word_d, out_jump_add_d, out_lsreg_a_d : std_logic_vector(15 downto 0);
+signal out_ls_enable_d : std_logic;
+
+-- REGISTER READ : r
+
+signal in_pc_r, in_pc_inc_r, in_instruction_r, in_control_word_r, in_jump_add_r, in_lsreg_a : std_logic_vector(15 downto 0);
+signal in_prop_r, in_enable_r : std_logic;
+signal out_pc_r, out_pc_inc_r, out_instruction_r, out_control_word_r, out_jump_add_r, out_lsreg_a_r, out_ra_r, out_rb_r : std_logic_vector(15 downto 0);
+
+-- EXECUTION TASKS : e
+
+signal in_pc_e, in_pc_inc_e, in_instruction_e, in_control_word_e, in_jump_add_e, in_lsreg_a_e, in_ra_e, in_rb_e : std_logic_vector(15 downto 0);
+signal out_pc_e, out_pc_inc_e, out_instruction_e, out_control_word_e, out_jump_add_e, out_lsreg_a_e, out_rc_e : std_logic_vector(15 downto 0);
+signal in_c_e, in_z_e, : std_logic;
+signal out_c_e, out_z_e : std_logic;
+
+
+--BEQ_CONDN_EVAL
+
+-- MEMORY ACCESS : m
+
+-- WRITE BACK : w
+
+-- HAZARDS
+
+-- General
+
+signal curr_state : std_logic_vector(5 downto 0);
+
+  
+-- Give inputs to IF, ID, RR, etc  
+  
+  
+begin
+
+
+
+	process(clk)
+	
+	variable nq_var : std_logic_vector(5 downto 0);
+	
+	begin
+	
+	nq_var := curr_state;
+	
+
+	
+	if(clk'event and clk = '1') then
+
+          if(r = '1') then
+             curr_state <= "000000";         
+			 else
+				 curr_state <= nq_var;
+
+				 -- Add all the control bits here
+				 
+          end if;
+			 
+     end if;
+	
+	
+	end process;
+
+
+end Project1;

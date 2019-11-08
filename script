@@ -1,0 +1,14 @@
+add wave IF_ID_interface
+add wave ID_RR_interface
+add wave RR_EX_interface
+add wave EX_MEM_interface
+add wave MEM_WR_interface
+add wave clk
+add wave r
+add wave in_pc_f
+add wave q_var
+force -freeze sim:/toplevel/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/toplevel/r 1 0
+run
+force -freeze sim:/toplevel/r 0 0
+

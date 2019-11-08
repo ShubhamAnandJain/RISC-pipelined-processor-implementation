@@ -1,0 +1,69 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+entity RegisterRead is
+port(pc,ir,pc_inc,jump_addr_in,wr_reg_data,wr_pc: in std_logic_vector(15 downto 0);
+		lsreg_a,wr_reg_add: in std_logic_vector(2 downto 0);
+		control_word_input: in std_logic_vector(15 downto 0);
+		control_word_output: out std_logic_vector(15 downto 0);
+		lsreg_a_out: out std_logic_vector(2 downto 0);
+		prop,enable,prop_wb,enable_wb,write_wb,clk,r: in std_logic;
+	 output_pc,output_pc_inc,output_ir,ra,rb,jump_addr_out: out std_logic_vector(15 downto 0));
+		
+	
+end entity RegisterRead;
+	
+architecture RR of RegisterRead is
+
+component RF is
+port(	clk : in std_logic;
+		rst : in std_logic;
+		Write_En : in std_logic_vector(1 downto 0);
+		Read_En : in std_logic;
+		Write_Data_1 : in std_logic_vector(15 downto 0);
+		Write_Data_2 : in std_logic_vector(15 downto 0);
+		Read_Data_1 : out std_logic_vector(15 downto 0);
+		Read_Data_2 : out std_logic_vector(15 downto 0);
+		In_select_1 : in std_logic_vector(2 downto 0);
+		In_select_2 : in std_logic_vector(2 downto 0);
+		Out_select_1 : in std_logic_vector(2 downto 0);
+		Out_select_2 : in std_logic_vector(2 downto 0));
+end component;
+
+signal Operand_select : std_logic_vector(1 downto 0);
+signal ra_rd_En, rb_rd_En, RF_En_sig : std_logic;
+signal ra_temp,rb_temp : std_logic_vector(15 downto 0);
+signal reg_select_a,reg_select_b : std_logic_vector(2 downto 0);
+
+begin
+
+--First of all, let us pass along the operands which are needed for further stages
+output_pc <= pc;
+output_pc_inc <= pc_inc;
+output_ir <= ir;
+jump_addr_out <= jump_addr_in;
+control_word_output <= control_word_input;
+lsreg_a_out <= lsreg_a;
+
+--Now let us get the values in registers a and b from the register file
+
+reg_select_a <= ir(11 downto 9) when control_word_input(8)='0' else lsreg_a;
+reg_select_b <= ir(8 downto 6);
+
+--Giving input and output to register module
+
+RF1: RF
+port map(clk => clk,	rst => r, Write_En=>((prop_wb and enable_wb and write_wb)&(prop_wb and enable_wb)), Read_En=>'1',
+		Write_Data_1 => wr_reg_data, Write_Data_2 => wr_pc,
+		Read_Data_1 => ra,
+		Read_Data_2 => rb,
+		In_select_1 => wr_reg_add,
+		In_select_2 => "111",
+		Out_select_1 => reg_select_a,
+		Out_select_2 => reg_select_b);
+
+--Checking for dependencies
+	
+end RR;
