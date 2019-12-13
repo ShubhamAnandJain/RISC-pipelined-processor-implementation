@@ -38,7 +38,9 @@ port(
 	lm_sm_out : out std_logic_vector(2 downto 0);
     
     start_bit   : in std_logic;
-    r7_bit      : out std_logic
+    r7_bit      : out std_logic;
+	 in_prop_e : in std_logic_vector(15 downto 0);
+	 out_prop_e : out std_logic_vector(15 downto 0)
     );
 
 end entity ExecutionTasks;
@@ -61,18 +63,17 @@ signal alu_output : std_logic_vector(15 downto 0);
 signal alu_out_temp : std_logic_vector(15 downto 0);
 signal imm : std_logic_vector(15 downto 0);
 signal lhi : std_logic_vector(15 downto 0);
-signal operand_sel_1, opt : std_logic;
+signal operand_sel_1, opt, beq_condn_temp : std_logic;
 signal operand_sel_2 : std_logic;
 signal op1 : std_logic_vector(15 downto 0);
-signal op2 : std_logic_vector(15 downto 0);
+signal op2, jump_temp : std_logic_vector(15 downto 0);
 
 begin
 	
 ----------Propagating
 
 pc_out <= pc;
-pc_inc_out <= pc_inc;
-
+out_prop_e <= in_prop_e;
 control_word_out(15 downto 8) <= control_word(15 downto 8);
 control_word_out(6 downto 0) <= control_word(6 downto 0);
 lm_sm_out <= lm_sm_in;
@@ -80,15 +81,16 @@ ir_out <= ir;
 
 ------ JUMP ADDR ( For BEQ, R7)
 
-jump_addr_out <= jump_addr when ir(15 downto 12)="1100" else
+jump_temp		 <= jump_addr when ir(15 downto 12)="1100" else
                 alu_out_temp when ir(15 downto 14)="00" and r7_bit_temp='1' ;
-
+jump_addr_out <= jump_temp;
 
 r7_bit_temp <= '1' when (ir(15 downto 12)="0000" and ir(5 downto 3)="111" and control_word_out_temp7='1') or (ir(15 downto 12)="0001" and ir(8 downto 6)="111") or (ir(15 downto 12)="0010" and ir(5 downto 3)="111" and control_word_out_temp7='1') or (ir(15 downto 12)="0011" and ir(11 downto 9)="111")
                 else '0';
 -- BEQ condn evaluate
-beq_condn_bit <= '1' when ((operand_1 = operand_2) and control_word(5)='1' and prop='1' and enable='1') or (r7_bit_temp='1')  else '0';
-r7_bit <= '1' when (lm_sm_in="111") or (ir(15 downto 12)="0100" and ir(11 downto 9)="111") else '0';
+beq_condn_temp <= '1' when ((operand_1 = operand_2) and control_word(5)='1' and prop='1' and enable='1') or (r7_bit_temp='1')  else '0';
+beq_condn_bit <= beq_condn_temp;
+r7_bit <= '1' when (lm_sm_in="111" and ir(15 downto 12) = "0110") or (ir(15 downto 12)="0100" and ir(11 downto 9)="111") else '0';
 --Setting the values of the operands and op_sel
 
 operand_sel_1 <= '1' when ir(15 downto 13)="010" else '0' ;
@@ -134,10 +136,12 @@ control_word_out_temp7 <= '0' when ((control_word(4)='1' and cin='0') or (contro
 control_word_out(7) <= control_word_out_temp7;
 
 --This is also trial code, please change if wrong
-c_temp <= alu_c when control_word(12)='1' and prop='1' and enable='1' and control_word(7)='1' else cin;
-z_temp <= alu_z when control_word(11)='1' and prop='1' and enable='1' and control_word(7)='1' else zin;
+c_temp <= alu_c when control_word(12)='1' and prop='1' and enable='1' and control_word_out_temp7='1' else cin;
+z_temp <= alu_z when control_word(11)='1' and prop='1' and enable='1' and control_word_out_temp7='1' else zin;
 
 cout <= c_temp;
 zout <= z_temp;
+
+pc_inc_out <= pc_inc when (beq_condn_temp = '0') else jump_temp;
 
 end OT;

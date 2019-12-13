@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Pipeline
-Thu Nov 07 22:17:34 2019
+Mon Nov 25 21:32:01 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -18,12 +18,13 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
  10. Port Connectivity Checks: "MemoryAccess:MEM_instance_1"
  11. Port Connectivity Checks: "ExecutionTasks:EX_instance_1"
  12. Port Connectivity Checks: "RegisterRead:RR_instance_1|RF:RF1"
- 13. Port Connectivity Checks: "RegisterRead:RR_instance_1"
- 14. Port Connectivity Checks: "InstructionDecode:ID_instance_1|Bit_adder_1:Adder|Full_Adder:add_instance_15"
- 15. Port Connectivity Checks: "InstructionDecode:ID_instance_1|Bit_adder_1:Adder"
- 16. Port Connectivity Checks: "InstructionFetch:IF_instance_1|Memory_asyncread_syncwrite:Mem1"
- 17. Port Connectivity Checks: "InstructionFetch:IF_instance_1|Bit_adder_8:B1"
- 18. Analysis & Synthesis Messages
+ 13. Port Connectivity Checks: "RegisterRead:RR_instance_1|Bit_adder_8:B1"
+ 14. Port Connectivity Checks: "RegisterRead:RR_instance_1"
+ 15. Port Connectivity Checks: "InstructionDecode:ID_instance_1|Bit_adder_1:Adder|Full_Adder:add_instance_15"
+ 16. Port Connectivity Checks: "InstructionDecode:ID_instance_1|Bit_adder_1:Adder"
+ 17. Port Connectivity Checks: "InstructionFetch:IF_instance_1|Memory_asyncread_syncwrite:Mem1"
+ 18. Port Connectivity Checks: "InstructionFetch:IF_instance_1|Bit_adder_8:B1"
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -50,7 +51,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Nov 07 22:17:34 2019       ;
+; Analysis & Synthesis Status ; Successful - Mon Nov 25 21:32:01 2019       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; Pipeline                                    ;
 ; Top-level Entity Name       ; TopLevel                                    ;
@@ -150,30 +151,31 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+-------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                              ; Library ;
-+-------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
-; WriteBack.vhdl                      ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl                      ;         ;
-; TopLevel.vhdl                       ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl                       ;         ;
-; SixteenBitAdder.vhdl                ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl                ;         ;
-; MemoryAccess.vhdl                   ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl                   ;         ;
-; Memory_asyncread_syncwrite.vhdl.vhd ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd ;         ;
-; InstructionFetch.vhdl               ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl               ;         ;
-; InstructionDecode.vhdl              ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl              ;         ;
-; HazardDetectionUnit.vhd             ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd             ;         ;
-; Full_Adder.vhdl                     ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl                     ;         ;
-; ExecutionTasks.vhdl                 ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl                 ;         ;
-; Encoder.vhdl                        ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl                        ;         ;
-; EightBitAdder.vhdl                  ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl                  ;         ;
-; Decoder.vhdl                        ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl                        ;         ;
-; BitwiseNand.vhdl                    ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl                    ;         ;
-; ALU.vhdl                            ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl                            ;         ;
-; Gates.vhdl                          ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl                          ;         ;
-; RF.vhdl                             ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl                             ;         ;
-; RegisterRead.vhdl                   ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl                   ;         ;
-+-------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                          ; Library ;
++-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
+; Memory_Data.vhdl                    ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/Memory_Data.vhdl                    ;         ;
+; WriteBack.vhdl                      ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/WriteBack.vhdl                      ;         ;
+; TopLevel.vhdl                       ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl                       ;         ;
+; SixteenBitAdder.vhdl                ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/SixteenBitAdder.vhdl                ;         ;
+; MemoryAccess.vhdl                   ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/MemoryAccess.vhdl                   ;         ;
+; Memory_asyncread_syncwrite.vhdl.vhd ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd ;         ;
+; InstructionFetch.vhdl               ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionFetch.vhdl               ;         ;
+; InstructionDecode.vhdl              ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl              ;         ;
+; HazardDetectionUnit.vhd             ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/HazardDetectionUnit.vhd             ;         ;
+; Full_Adder.vhdl                     ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/Full_Adder.vhdl                     ;         ;
+; ExecutionTasks.vhdl                 ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl                 ;         ;
+; Encoder.vhdl                        ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/Encoder.vhdl                        ;         ;
+; EightBitAdder.vhdl                  ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/EightBitAdder.vhdl                  ;         ;
+; Decoder.vhdl                        ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl                        ;         ;
+; BitwiseNand.vhdl                    ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/BitwiseNand.vhdl                    ;         ;
+; ALU.vhdl                            ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/ALU.vhdl                            ;         ;
+; Gates.vhdl                          ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl                          ;         ;
+; RF.vhdl                             ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/RF.vhdl                             ;         ;
+; RegisterRead.vhdl                   ; yes             ; User VHDL File  ; C:/Users/Dell/Documents/Micro_Project1_it1-master/RegisterRead.vhdl                   ;         ;
++-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -240,13 +242,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MemoryAccess:MEM_instance_1"                                                              ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; pc_inc_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MemoryAccess:MEM_instance_1"                                                          ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; pc_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -266,6 +268,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; read_en     ; Input ; Info     ; Stuck at VCC                 ;
 ; in_select_2 ; Input ; Info     ; Stuck at VCC                 ;
 +-------------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RegisterRead:RR_instance_1|Bit_adder_8:B1"                                                          ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                 ; Type   ; Severity ; Details                                                                             ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; input_vector2[15..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; input_vector2[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; output_vector        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -329,249 +342,268 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Nov 07 22:17:24 2019
+    Info: Processing started: Mon Nov 25 21:31:52 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pipeline -c Pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file memory_data.vhdl
+    Info (12022): Found design unit 1: Memory_Data-ARC File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Memory_Data.vhdl Line: 18
+    Info (12023): Found entity 1: Memory_Data File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Memory_Data.vhdl Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file writeback.vhdl
-    Info (12022): Found design unit 1: WriteBack-WB File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl Line: 16
-    Info (12023): Found entity 1: WriteBack File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/WriteBack.vhdl Line: 6
+    Info (12022): Found design unit 1: WriteBack-WB File: C:/Users/Dell/Documents/Micro_Project1_it1-master/WriteBack.vhdl Line: 18
+    Info (12023): Found entity 1: WriteBack File: C:/Users/Dell/Documents/Micro_Project1_it1-master/WriteBack.vhdl Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhdl
-    Info (12022): Found design unit 1: TopLevel-Project1 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 8
-    Info (12023): Found entity 1: TopLevel File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 4
+    Info (12022): Found design unit 1: TopLevel-Project1 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 8
+    Info (12023): Found entity 1: TopLevel File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sixteenbitadder.vhdl
-    Info (12022): Found design unit 1: Bit_adder_1-Addition File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl Line: 14
-    Info (12023): Found entity 1: Bit_adder_1 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/SixteenBitAdder.vhdl Line: 7
+    Info (12022): Found design unit 1: Bit_adder_1-Addition File: C:/Users/Dell/Documents/Micro_Project1_it1-master/SixteenBitAdder.vhdl Line: 14
+    Info (12023): Found entity 1: Bit_adder_1 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/SixteenBitAdder.vhdl Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file memoryaccess.vhdl
-    Info (12022): Found design unit 1: MemoryAccess-stage_mem File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl Line: 29
-    Info (12023): Found entity 1: MemoryAccess File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/MemoryAccess.vhdl Line: 5
+    Info (12022): Found design unit 1: MemoryAccess-stage_mem File: C:/Users/Dell/Documents/Micro_Project1_it1-master/MemoryAccess.vhdl Line: 31
+    Info (12023): Found entity 1: MemoryAccess File: C:/Users/Dell/Documents/Micro_Project1_it1-master/MemoryAccess.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memory_asyncread_syncwrite.vhdl.vhd
-    Info (12022): Found design unit 1: Memory_asyncread_syncwrite-Form File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd Line: 18
-    Info (12023): Found entity 1: Memory_asyncread_syncwrite File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd Line: 13
+    Info (12022): Found design unit 1: Memory_asyncread_syncwrite-Form File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd Line: 18
+    Info (12023): Found entity 1: Memory_asyncread_syncwrite File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Memory_asyncread_syncwrite.vhdl.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file instructionfetch.vhdl
-    Info (12022): Found design unit 1: InstructionFetch-IR File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl Line: 12
-    Info (12023): Found entity 1: InstructionFetch File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl Line: 6
+    Info (12022): Found design unit 1: InstructionFetch-IR File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionFetch.vhdl Line: 12
+    Info (12023): Found entity 1: InstructionFetch File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionFetch.vhdl Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file instructiondecode.vhdl
-    Info (12022): Found design unit 1: InstructionDecode-decode File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 30
-    Info (12023): Found entity 1: InstructionDecode File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 5
+    Info (12022): Found design unit 1: InstructionDecode-decode File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 31
+    Info (12023): Found entity 1: InstructionDecode File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file hazarddetectionunit.vhd
-    Info (12022): Found design unit 1: HazardDetectionUnit-SpaghettiCode File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd Line: 16
-    Info (12023): Found entity 1: HazardDetectionUnit File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/HazardDetectionUnit.vhd Line: 5
+    Info (12022): Found design unit 1: HazardDetectionUnit-SpaghettiCode File: C:/Users/Dell/Documents/Micro_Project1_it1-master/HazardDetectionUnit.vhd Line: 17
+    Info (12023): Found entity 1: HazardDetectionUnit File: C:/Users/Dell/Documents/Micro_Project1_it1-master/HazardDetectionUnit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhdl
-    Info (12022): Found design unit 1: Full_Adder-Struct File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl Line: 10
-    Info (12023): Found entity 1: Full_Adder File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Full_Adder.vhdl Line: 7
+    Info (12022): Found design unit 1: Full_Adder-Struct File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Full_Adder.vhdl Line: 10
+    Info (12023): Found entity 1: Full_Adder File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Full_Adder.vhdl Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file executiontasks.vhdl
-    Info (12022): Found design unit 1: ExecutionTasks-OT File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 46
-    Info (12023): Found entity 1: ExecutionTasks File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 5
+    Info (12022): Found design unit 1: ExecutionTasks-OT File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 48
+    Info (12023): Found entity 1: ExecutionTasks File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file encoder.vhdl
-    Info (12022): Found design unit 1: eightToThreeEnc-str File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl Line: 11
-    Info (12023): Found entity 1: eightToThreeEnc File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Encoder.vhdl Line: 4
+    Info (12022): Found design unit 1: eightToThreeEnc-str File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Encoder.vhdl Line: 11
+    Info (12023): Found entity 1: eightToThreeEnc File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Encoder.vhdl Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file eightbitadder.vhdl
-    Info (12022): Found design unit 1: Bit_adder_8-Addition File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl Line: 13
-    Info (12023): Found entity 1: Bit_adder_8 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl Line: 7
+    Info (12022): Found design unit 1: Bit_adder_8-Addition File: C:/Users/Dell/Documents/Micro_Project1_it1-master/EightBitAdder.vhdl Line: 13
+    Info (12023): Found entity 1: Bit_adder_8 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/EightBitAdder.vhdl Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhdl
-    Info (12022): Found design unit 1: threeToeight_Decoder-decode File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 11
-    Info (12023): Found entity 1: threeToeight_Decoder File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 4
+    Info (12022): Found design unit 1: threeToeight_Decoder-decode File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 11
+    Info (12023): Found entity 1: threeToeight_Decoder File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file bitwisenand.vhdl
-    Info (12022): Found design unit 1: BitwiseNand-fn1 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl Line: 11
-    Info (12023): Found entity 1: BitwiseNand File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/BitwiseNand.vhdl Line: 4
+    Info (12022): Found design unit 1: BitwiseNand-fn1 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/BitwiseNand.vhdl Line: 11
+    Info (12023): Found entity 1: BitwiseNand File: C:/Users/Dell/Documents/Micro_Project1_it1-master/BitwiseNand.vhdl Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhdl
-    Info (12022): Found design unit 1: ALU-FinalWork File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl Line: 18
-    Info (12023): Found entity 1: ALU File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl Line: 6
+    Info (12022): Found design unit 1: ALU-FinalWork File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ALU.vhdl Line: 18
+    Info (12023): Found entity 1: ALU File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ALU.vhdl Line: 6
 Info (12021): Found 19 design units, including 9 entities, in source file gates.vhdl
-    Info (12022): Found design unit 1: Gates File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 3
-    Info (12022): Found design unit 2: INVERTER-Equations File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 54
-    Info (12022): Found design unit 3: AND_2-Equations File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 66
-    Info (12022): Found design unit 4: NAND_2-Equations File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 77
-    Info (12022): Found design unit 5: OR_2-Equations File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 88
-    Info (12022): Found design unit 6: NOR_2-Equations File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 99
-    Info (12022): Found design unit 7: XOR_2-Equations File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 111
-    Info (12022): Found design unit 8: XNOR_2-Equations File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 122
-    Info (12022): Found design unit 9: HALF_ADDER-Equations File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 133
-    Info (12022): Found design unit 10: INVERTER_VECTOR-Equations File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 147
-    Info (12023): Found entity 1: INVERTER File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 50
-    Info (12023): Found entity 2: AND_2 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 62
-    Info (12023): Found entity 3: NAND_2 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 73
-    Info (12023): Found entity 4: OR_2 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 84
-    Info (12023): Found entity 5: NOR_2 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 95
-    Info (12023): Found entity 6: XOR_2 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 107
-    Info (12023): Found entity 7: XNOR_2 File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 118
-    Info (12023): Found entity 8: HALF_ADDER File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 129
-    Info (12023): Found entity 9: INVERTER_VECTOR File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Gates.vhdl Line: 143
+    Info (12022): Found design unit 1: Gates File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 3
+    Info (12022): Found design unit 2: INVERTER-Equations File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 54
+    Info (12022): Found design unit 3: AND_2-Equations File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 66
+    Info (12022): Found design unit 4: NAND_2-Equations File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 77
+    Info (12022): Found design unit 5: OR_2-Equations File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 88
+    Info (12022): Found design unit 6: NOR_2-Equations File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 99
+    Info (12022): Found design unit 7: XOR_2-Equations File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 111
+    Info (12022): Found design unit 8: XNOR_2-Equations File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 122
+    Info (12022): Found design unit 9: HALF_ADDER-Equations File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 133
+    Info (12022): Found design unit 10: INVERTER_VECTOR-Equations File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 147
+    Info (12023): Found entity 1: INVERTER File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 50
+    Info (12023): Found entity 2: AND_2 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 62
+    Info (12023): Found entity 3: NAND_2 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 73
+    Info (12023): Found entity 4: OR_2 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 84
+    Info (12023): Found entity 5: NOR_2 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 95
+    Info (12023): Found entity 6: XOR_2 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 107
+    Info (12023): Found entity 7: XNOR_2 File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 118
+    Info (12023): Found entity 8: HALF_ADDER File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 129
+    Info (12023): Found entity 9: INVERTER_VECTOR File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Gates.vhdl Line: 143
 Info (12021): Found 2 design units, including 1 entities, in source file rf.vhdl
-    Info (12022): Found design unit 1: RF-Wrk File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl Line: 21
-    Info (12023): Found entity 1: RF File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RF.vhdl Line: 4
+    Info (12022): Found design unit 1: RF-Wrk File: C:/Users/Dell/Documents/Micro_Project1_it1-master/RF.vhdl Line: 21
+    Info (12023): Found entity 1: RF File: C:/Users/Dell/Documents/Micro_Project1_it1-master/RF.vhdl Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registerread.vhdl
-    Info (12022): Found design unit 1: RegisterRead-RR File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl Line: 20
-    Info (12023): Found entity 1: RegisterRead File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl Line: 6
+    Info (12022): Found design unit 1: RegisterRead-RR File: C:/Users/Dell/Documents/Micro_Project1_it1-master/RegisterRead.vhdl Line: 23
+    Info (12023): Found entity 1: RegisterRead File: C:/Users/Dell/Documents/Micro_Project1_it1-master/RegisterRead.vhdl Line: 6
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(137): object "check_PC" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 137
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(138): object "check_IR" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 138
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(139): object "check_cntrl_wrd" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 139
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(140): object "check_op_1" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 140
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(141): object "check_op_2" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 141
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(143): object "R0" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 143
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(143): object "R1" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 143
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(143): object "R2" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 143
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(143): object "R3" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 143
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(143): object "R4" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 143
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(143): object "R5" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 143
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(143): object "R6" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 143
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(143): object "R7" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 143
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(181): object "wr_c_bit_e" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 181
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(187): object "out_pc_inc_m" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 187
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(195): object "data_add_2_out_w" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 195
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(282): object "en_wr" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 282
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(296): object "opcode_id" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 296
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(303): object "lmsmw" assigned a value but never read File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 303
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(311): signal "out_lsreg_a_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 311
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(312): signal "out_lm_sm_address_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 312
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(313): signal "out_lm_sm_address_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 313
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(314): signal "out_data_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 314
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(316): signal "out_zero_flag_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 316
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(317): signal "out_start_bit_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 317
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(318): signal "out_start_bit_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 318
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(319): signal "out_r7_bit_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 319
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(320): signal "out_r7_bit_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 320
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(322): signal "alu_out_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 322
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(323): signal "rf_write_data1_out_w" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 323
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(326): signal "in_enable_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 326
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(327): signal "in_prop_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 327
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(328): signal "out_z_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 328
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(329): signal "out_c_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 329
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(330): signal "zero_flag_out_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 330
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(332): signal "IF_ID_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 332
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(333): signal "IF_ID_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 333
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(335): signal "ID_RR_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 335
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(336): signal "ID_RR_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 336
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(338): signal "RR_EX_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 338
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(339): signal "RR_EX_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 339
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(341): signal "EX_MEM_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 341
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(342): signal "EX_MEM_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 342
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(344): signal "MEM_WR_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 344
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(345): signal "MEM_WR_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 345
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(347): signal "out_instruction_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 347
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(370): signal "out_pc_inc_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 370
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(371): signal "bmem_bex_ra" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 371
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(372): signal "bmem_bex_rb" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 372
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(373): signal "bwb_bex_ra" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 373
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(374): signal "bwb_bex_rb" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 374
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(376): signal "beq_condn_bit_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 376
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(377): signal "out_control_word_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 377
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(378): signal "out_control_word_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 378
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(380): signal "out_jump_add_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 380
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(381): signal "out_normal_jump_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 381
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(382): signal "out_jump_add_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 382
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(384): signal "out_pc_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 384
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(385): signal "out_pc_inc_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 385
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(386): signal "out_instruction_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 386
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(392): signal "out_pc_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 392
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(393): signal "out_instruction_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 393
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(394): signal "out_pc_inc_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 394
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(395): signal "out_jump_add_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 395
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(396): signal "out_lsreg_a_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 396
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(397): signal "out_control_word_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 397
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(401): signal "r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 401
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(404): signal "out_ra_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 404
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(405): signal "out_pc_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 405
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(406): signal "out_pc_inc_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 406
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(407): signal "out_ra_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 407
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(408): signal "out_rb_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 408
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(409): signal "out_instruction_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 409
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(410): signal "out_control_word_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 410
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(411): signal "out_jump_add_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 411
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(418): signal "lm_address_out_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 418
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(419): signal "out_pc_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 419
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(420): signal "out_pc_inc_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 420
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(421): signal "alu_out_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 421
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(422): signal "out_instruction_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 422
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(423): signal "out_control_word_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 423
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(428): signal "out_instruction_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 428
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(429): signal "out_control_word_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 429
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(430): signal "out_data_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 430
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(431): signal "out_pc_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 431
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(432): signal "out_lm_sm_address_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 432
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(437): signal "out_ls_enable_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 437
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(438): signal "out_instruction_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 438
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(439): signal "out_instruction_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 439
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(440): signal "out_instruction_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 440
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(459): signal "q_var" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 459
-Info (12128): Elaborating entity "InstructionFetch" for hierarchy "InstructionFetch:IF_instance_1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 221
-Info (12128): Elaborating entity "Bit_adder_8" for hierarchy "InstructionFetch:IF_instance_1|Bit_adder_8:B1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl Line: 32
-Info (12128): Elaborating entity "HALF_ADDER" for hierarchy "InstructionFetch:IF_instance_1|Bit_adder_8:B1|HALF_ADDER:haa" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl Line: 27
-Info (12128): Elaborating entity "Full_Adder" for hierarchy "InstructionFetch:IF_instance_1|Bit_adder_8:B1|Full_Adder:add_instance_1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/EightBitAdder.vhdl Line: 35
-Info (12128): Elaborating entity "Memory_asyncread_syncwrite" for hierarchy "InstructionFetch:IF_instance_1|Memory_asyncread_syncwrite:Mem1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionFetch.vhdl Line: 35
-Info (12128): Elaborating entity "InstructionDecode" for hierarchy "InstructionDecode:ID_instance_1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 225
-Info (10041): Inferred latch for "RegSelectImm[0]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
-Info (10041): Inferred latch for "RegSelectImm[1]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
-Info (10041): Inferred latch for "RegSelectImm[2]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
-Info (10041): Inferred latch for "RegSelectImm[3]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
-Info (10041): Inferred latch for "RegSelectImm[4]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
-Info (10041): Inferred latch for "RegSelectImm[5]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
-Info (10041): Inferred latch for "RegSelectImm[6]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
-Info (10041): Inferred latch for "RegSelectImm[7]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
-Info (10041): Inferred latch for "BEQ_jump_address[0]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[1]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[2]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[3]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[4]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[5]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[6]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[7]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[8]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[9]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[10]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[11]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[12]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[13]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[14]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (10041): Inferred latch for "BEQ_jump_address[15]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
-Info (12128): Elaborating entity "eightToThreeEnc" for hierarchy "InstructionDecode:ID_instance_1|eightToThreeEnc:Enc" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 103
-Info (12128): Elaborating entity "threeToeight_Decoder" for hierarchy "InstructionDecode:ID_instance_1|threeToeight_Decoder:Dec" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 106
-Info (10041): Inferred latch for "output_line1[0]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 15
-Info (10041): Inferred latch for "output_line1[1]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 15
-Info (10041): Inferred latch for "output_line1[2]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 15
-Info (10041): Inferred latch for "output_line1[3]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 15
-Info (10041): Inferred latch for "output_line1[4]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 15
-Info (10041): Inferred latch for "output_line1[5]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 15
-Info (10041): Inferred latch for "output_line1[6]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 15
-Info (10041): Inferred latch for "output_line1[7]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/Decoder.vhdl Line: 15
-Info (12128): Elaborating entity "Bit_adder_1" for hierarchy "InstructionDecode:ID_instance_1|Bit_adder_1:Adder" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 109
-Info (12128): Elaborating entity "RegisterRead" for hierarchy "RegisterRead:RR_instance_1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 232
-Info (12128): Elaborating entity "RF" for hierarchy "RegisterRead:RR_instance_1|RF:RF1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/RegisterRead.vhdl Line: 73
-Info (12128): Elaborating entity "ExecutionTasks" for hierarchy "ExecutionTasks:EX_instance_1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 241
-Warning (10541): VHDL Signal Declaration warning at ExecutionTasks.vhdl(33): used implicit default value for signal "wr_c_bit" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 33
-Info (10041): Inferred latch for "jump_addr_out[0]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[1]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[2]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[3]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[4]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[5]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[6]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[7]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[8]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[9]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[10]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[11]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[12]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[13]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[14]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (10041): Inferred latch for "jump_addr_out[15]" at ExecutionTasks.vhdl(83) File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 83
-Info (12128): Elaborating entity "ALU" for hierarchy "ExecutionTasks:EX_instance_1|ALU:Alu1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 110
-Info (12128): Elaborating entity "BitwiseNand" for hierarchy "ExecutionTasks:EX_instance_1|ALU:Alu1|BitwiseNand:B2" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/ALU.vhdl Line: 43
-Info (12128): Elaborating entity "MemoryAccess" for hierarchy "MemoryAccess:MEM_instance_1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 249
-Info (12128): Elaborating entity "WriteBack" for hierarchy "WriteBack:WB_instance_1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 256
-Info (12128): Elaborating entity "HazardDetectionUnit" for hierarchy "HazardDetectionUnit:HD_instance_1" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 271
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(158): object "check_PC" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 158
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(159): object "check_IR" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 159
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(160): object "check_cntrl_wrd" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 160
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(161): object "check_op_1" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 161
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(162): object "check_op_2" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 162
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(164): object "R0" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 164
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(164): object "R1" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 164
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(164): object "R2" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 164
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(164): object "R3" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 164
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(164): object "R4" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 164
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(164): object "R5" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 164
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(164): object "R6" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 164
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(164): object "R7" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 164
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(202): object "wr_c_bit_e" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 202
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(208): object "out_pc_m" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 208
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(216): object "data_add_2_out_w" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 216
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(307): object "en_wr" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 307
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(308): object "prop_wr" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 308
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(321): object "opcode_id" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 321
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(328): object "lmsmw" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 328
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(332): object "jump_mem" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 332
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(333): object "out_prop_temp_d" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 333
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(333): object "out_prop_temp_r" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 333
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(333): object "out_prop_temp_e" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 333
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(333): object "out_prop_temp_m" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 333
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(337): signal "out_lsreg_a_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 337
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(338): signal "out_lm_sm_address_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 338
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(339): signal "out_lm_sm_address_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 339
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(340): signal "out_data_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 340
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(342): signal "out_prop_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 342
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(343): signal "out_prop_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 343
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(344): signal "out_prop_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 344
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(345): signal "out_prop_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 345
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(347): signal "out_zero_flag_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 347
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(348): signal "out_start_bit_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 348
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(349): signal "out_start_bit_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 349
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(350): signal "out_r7_bit_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 350
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(351): signal "out_r7_bit_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 351
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(353): signal "alu_out_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 353
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(354): signal "out_data_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 354
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(357): signal "out_z_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 357
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(358): signal "out_c_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 358
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(359): signal "zero_flag_out_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 359
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(362): signal "in_enable_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 362
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(363): signal "in_prop_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 363
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(365): signal "IF_ID_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 365
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(366): signal "IF_ID_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 366
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(368): signal "ID_RR_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 368
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(369): signal "ID_RR_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 369
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(371): signal "RR_EX_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 371
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(372): signal "RR_EX_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 372
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(374): signal "EX_MEM_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 374
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(375): signal "EX_MEM_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 375
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(377): signal "MEM_WR_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 377
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(378): signal "MEM_WR_interface" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 378
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(380): signal "out_instruction_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 380
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(386): signal "out_pc_inc_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 386
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(410): signal "bmem_bex_ra" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 410
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(410): signal "out_control_word_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 410
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(411): signal "bmem_bex_rb" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 411
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(411): signal "out_control_word_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 411
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(412): signal "bwb_bex_ra" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 412
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(412): signal "out_control_word_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 412
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(413): signal "bwb_bex_rb" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 413
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(413): signal "out_control_word_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 413
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(415): signal "beq_condn_bit_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 415
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(416): signal "out_control_word_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 416
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(417): signal "out_control_word_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 417
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(419): signal "out_jump_add_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 419
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(420): signal "out_normal_jump_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 420
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(421): signal "out_jump_add_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 421
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(423): signal "out_pc_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 423
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(424): signal "out_pc_inc_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 424
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(425): signal "out_instruction_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 425
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(431): signal "out_pc_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 431
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(432): signal "out_instruction_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 432
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(433): signal "out_pc_inc_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 433
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(434): signal "out_jump_add_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 434
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(435): signal "out_lsreg_a_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 435
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(436): signal "out_control_word_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 436
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(440): signal "r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 440
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(443): signal "out_ra_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 443
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(444): signal "out_pc_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 444
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(445): signal "out_pc_inc_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 445
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(446): signal "out_ra_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 446
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(447): signal "out_rb_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 447
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(448): signal "out_instruction_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 448
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(449): signal "out_control_word_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 449
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(450): signal "out_jump_add_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 450
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(457): signal "lm_address_out_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 457
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(458): signal "out_pc_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 458
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(459): signal "out_pc_inc_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 459
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(460): signal "alu_out_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 460
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(461): signal "out_instruction_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 461
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(462): signal "out_control_word_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 462
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(467): signal "out_instruction_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 467
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(468): signal "out_control_word_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 468
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(469): signal "out_data_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 469
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(470): signal "out_pc_inc_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 470
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(471): signal "out_lm_sm_address_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 471
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(476): signal "out_ls_enable_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 476
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(477): signal "out_instruction_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 477
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(478): signal "out_instruction_r" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 478
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(479): signal "out_instruction_f" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 479
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(527): signal "q_var" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 527
+Info (12128): Elaborating entity "InstructionFetch" for hierarchy "InstructionFetch:IF_instance_1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 246
+Info (12128): Elaborating entity "Bit_adder_8" for hierarchy "InstructionFetch:IF_instance_1|Bit_adder_8:B1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionFetch.vhdl Line: 32
+Info (12128): Elaborating entity "HALF_ADDER" for hierarchy "InstructionFetch:IF_instance_1|Bit_adder_8:B1|HALF_ADDER:haa" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/EightBitAdder.vhdl Line: 27
+Info (12128): Elaborating entity "Full_Adder" for hierarchy "InstructionFetch:IF_instance_1|Bit_adder_8:B1|Full_Adder:add_instance_1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/EightBitAdder.vhdl Line: 35
+Info (12128): Elaborating entity "Memory_asyncread_syncwrite" for hierarchy "InstructionFetch:IF_instance_1|Memory_asyncread_syncwrite:Mem1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionFetch.vhdl Line: 35
+Info (12128): Elaborating entity "InstructionDecode" for hierarchy "InstructionDecode:ID_instance_1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 250
+Info (10041): Inferred latch for "RegSelectImm[0]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
+Info (10041): Inferred latch for "RegSelectImm[1]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
+Info (10041): Inferred latch for "RegSelectImm[2]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
+Info (10041): Inferred latch for "RegSelectImm[3]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
+Info (10041): Inferred latch for "RegSelectImm[4]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
+Info (10041): Inferred latch for "RegSelectImm[5]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
+Info (10041): Inferred latch for "RegSelectImm[6]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
+Info (10041): Inferred latch for "RegSelectImm[7]" at InstructionDecode.vhdl(90) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 90
+Info (10041): Inferred latch for "BEQ_jump_address[0]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[1]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[2]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[3]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[4]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[5]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[6]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[7]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[8]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[9]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[10]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[11]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[12]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[13]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[14]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (10041): Inferred latch for "BEQ_jump_address[15]" at InstructionDecode.vhdl(78) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 78
+Info (12128): Elaborating entity "eightToThreeEnc" for hierarchy "InstructionDecode:ID_instance_1|eightToThreeEnc:Enc" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 103
+Info (12128): Elaborating entity "threeToeight_Decoder" for hierarchy "InstructionDecode:ID_instance_1|threeToeight_Decoder:Dec" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 106
+Info (10041): Inferred latch for "output_line1[0]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 15
+Info (10041): Inferred latch for "output_line1[1]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 15
+Info (10041): Inferred latch for "output_line1[2]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 15
+Info (10041): Inferred latch for "output_line1[3]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 15
+Info (10041): Inferred latch for "output_line1[4]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 15
+Info (10041): Inferred latch for "output_line1[5]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 15
+Info (10041): Inferred latch for "output_line1[6]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 15
+Info (10041): Inferred latch for "output_line1[7]" at Decoder.vhdl(15) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/Decoder.vhdl Line: 15
+Info (12128): Elaborating entity "Bit_adder_1" for hierarchy "InstructionDecode:ID_instance_1|Bit_adder_1:Adder" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/InstructionDecode.vhdl Line: 109
+Info (12128): Elaborating entity "RegisterRead" for hierarchy "RegisterRead:RR_instance_1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 257
+Warning (10036): Verilog HDL or VHDL warning at RegisterRead.vhdl(50): object "wr_pc_inc" assigned a value but never read File: C:/Users/Dell/Documents/Micro_Project1_it1-master/RegisterRead.vhdl Line: 50
+Info (12128): Elaborating entity "RF" for hierarchy "RegisterRead:RR_instance_1|RF:RF1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/RegisterRead.vhdl Line: 90
+Info (12128): Elaborating entity "ExecutionTasks" for hierarchy "ExecutionTasks:EX_instance_1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 266
+Warning (10541): VHDL Signal Declaration warning at ExecutionTasks.vhdl(33): used implicit default value for signal "wr_c_bit" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 33
+Info (10041): Inferred latch for "jump_temp[0]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[1]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[2]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[3]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[4]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[5]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[6]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[7]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[8]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[9]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[10]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[11]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[12]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[13]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[14]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (10041): Inferred latch for "jump_temp[15]" at ExecutionTasks.vhdl(84) File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 84
+Info (12128): Elaborating entity "ALU" for hierarchy "ExecutionTasks:EX_instance_1|ALU:Alu1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ExecutionTasks.vhdl Line: 112
+Info (12128): Elaborating entity "BitwiseNand" for hierarchy "ExecutionTasks:EX_instance_1|ALU:Alu1|BitwiseNand:B2" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/ALU.vhdl Line: 43
+Info (12128): Elaborating entity "MemoryAccess" for hierarchy "MemoryAccess:MEM_instance_1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 274
+Info (12128): Elaborating entity "Memory_Data" for hierarchy "MemoryAccess:MEM_instance_1|Memory_Data:Mem_data" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/MemoryAccess.vhdl Line: 47
+Info (12128): Elaborating entity "WriteBack" for hierarchy "WriteBack:WB_instance_1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 281
+Info (12128): Elaborating entity "HazardDetectionUnit" for hierarchy "HazardDetectionUnit:HD_instance_1" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 296
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "r" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 5
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Dell/Documents/ViruNePareshanKrdia/Micro_Project1_it1-master/TopLevel.vhdl Line: 5
+    Warning (15610): No output dependent on input pin "r" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 5
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Dell/Documents/Micro_Project1_it1-master/TopLevel.vhdl Line: 5
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 96 warnings
-    Info: Peak virtual memory: 4989 megabytes
-    Info: Processing ended: Thu Nov 07 22:17:34 2019
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 111 warnings
+    Info: Peak virtual memory: 4991 megabytes
+    Info: Processing ended: Mon Nov 25 21:32:01 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:18
 
 

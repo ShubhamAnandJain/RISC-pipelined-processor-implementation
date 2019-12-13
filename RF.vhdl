@@ -21,7 +21,7 @@ end entity;
 architecture Wrk of RF is
 
 type RegisterSet is  array(0 to 7) of std_logic_vector(15 downto 0);
-signal RegisterNo : RegisterSet:=(0 => x"0000", 1 => x"0011", 2 => x"0001",others => x"0000") ;
+signal RegisterNo : RegisterSet:=(0 => x"0001", 1 => x"0011", 2 => x"0001",others => x"0000") ;
 signal readen,writeen,c0, c1, c2, c3, c4, c5, c6, c7, b0, b1, b2, b3, b4, b5, b6, b7 : std_logic_vector(15 downto 0);
 type TempSet is  array(0 to 7) of std_logic_vector(15 downto 0);
 signal TempNo : TempSet;

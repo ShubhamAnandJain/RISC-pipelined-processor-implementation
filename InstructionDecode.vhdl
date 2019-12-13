@@ -22,7 +22,8 @@ port(
 		LsReg_a : out std_logic_vector(2 downto 0);
 		IR_ID_enable : out std_logic;
 		flag_bit : out std_logic;
-		start_bit : out std_logic
+		start_bit : out std_logic;
+		prop_reg : out std_logic_vector(15 downto 0)
 		);
 
 end entity;
@@ -55,12 +56,11 @@ signal Pref6 : std_logic_vector(9 downto 0);
 signal Pref9 : std_logic_vector(6 downto 0);
 signal RegSelectImm, Decoder_output, feedback_to_enc, fbenc1 : std_logic_vector(7 downto 0);
 signal ra_temp_add, ra_temp_add_1 : std_logic_vector(2 downto 0);
-signal mux_select : std_logic;
+signal mux_select, bool_bit : std_logic;
 
 begin
 
 start_bit <= '1' when((ir(15 downto 12) = "0110" or ir(15 downto 12) = "0111") and SM_LM_mux_control = '0') else '0';
- 
 
 IR_ID_enable <= (not ra_temp_add_1(0)) and (not ra_temp_add_1(1)) and (not ra_temp_add_1(2));
 ra_temp_add(2) <= not ra_temp_add_1(2);
@@ -69,11 +69,11 @@ ra_temp_add(0) <= not ra_temp_add_1(0);
 mux_select <= ir(15) and ir(14);
 LsReg_a <= ra_temp_add;
 out_pc <= pc;
-out_pc_inc <= pc_inc;
 out_ir <= ir;
 feedback_to_enc <= RegSelectImm and not(Decoder_output);
 
 flag_bit <='1' when ((ir(15 downto 12) = "0111" or ir(15 downto 12) = "0110") and ir(0) = '1') else '0';
+bool_bit <= '0' when ir(7 downto 0) = "00000000" else '1';
 
 BEQ_jump_address <= (others => '0') when mux_select = '0' else
 							jmp_address_signal when mux_select = '1';
@@ -109,15 +109,17 @@ port map(input_line1 => ra_temp_add_1 , output_line1 => Decoder_output);
 Adder : Bit_adder_1
 port map(input_vector1=> Jmp_mag, input_vector2=> pc_inc, CarIn=> '0', output_vector=> jmp_address_signal);
 
+out_pc_inc <= jmp_address_signal when (ir(15 downto 12) = "1000") else pc_inc;
+prop_reg <= pc_inc;
 --generation of control words
-control_word(15) <= (not(ir(15)) and not(ir(14)) and (ir(13)) and not(ir(12))) or (not(ir(15)) and (ir(14)) and not(ir(13)) and not(ir(12)));
-control_word(14) <= ir(15) and not(ir(14)) and not(ir(13)) and not(ir(12));
-control_word(13) <= ir(15) and not(ir(14)) and not(ir(13)) and ir(12);
+control_word(15) <= (not(ir(15)) and not(ir(14)) and (ir(13)) and not(ir(12)));
+control_word(14) <= ir(15) and not(ir(14)) and not(ir(13)) and not(ir(12)) and (not(ir(11) and ir(10) and ir(9)));
+control_word(13) <= ir(15) and not(ir(14)) and not(ir(13)) and ir(12) and (not(ir(11) and ir(10) and ir(9)));
 control_word(12) <= not(ir(15)) and not(ir(14)) and not(ir(13));
 control_word(11) <= (not(ir(15)) and not(ir(14)) and (ir(13) nand ir(12))) or (ir(14) and not(ir(15)) and (ir(13) nor ir(12)));
 control_word(10) <= not(not(ir(15)) and (ir(14)) and (ir(12)));
-control_word(9) <= not(ir(15)) and ir(14) and ir(13) and not(ir(12));
-control_word(8) <= not(ir(15)) and ir(14) and ir(13) and ir(12);
+control_word(9) <= not(ir(15)) and ir(14) and ir(13) and not(ir(12)) and bool_bit;
+control_word(8) <= not(ir(15)) and ir(14) and ir(13) and ir(12) and bool_bit;
 control_word(7) <= not(ir(14)) or (not(ir(12)) and not(ir(15)));
 control_word(6) <= mux_select;
 control_word(5) <= ir(15) and ir(14) and not(ir(13)) and not(ir(12));
@@ -126,6 +128,7 @@ control_word(3) <= not(ir(15)) and not(ir(14)) and not(ir(12)) and ir(0) ;
 control_word(2) <= not(ir(15)) and not(ir(14)) and ir(13) and ir(12);
 control_word(1) <= not(ir(15)) and not(ir(14)) and not(ir(13)) and ir(12);
 control_word(0) <= (ir(14) and ir(13)) or (not(ir(15)) and not(ir(14)) and not(ir(13)) and ir(12));
+
 
 
 
